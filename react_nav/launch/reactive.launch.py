@@ -17,7 +17,7 @@ def generate_launch_description():
                 {"world":"./src/react_nav/worlds/rooms.world"}
             ],
             remappings=[
-                ("/stage/ranger_0","/scan"),
+                ("/stage/ranger_0","/scan")
             ]
         ),
         Node(
