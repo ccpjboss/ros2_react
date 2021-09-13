@@ -1,0 +1,3 @@
+[submodule "stage_ros2"]
+	path = stage_ros2
+	url = https://github.com/ymd-stella/stage_ros2
