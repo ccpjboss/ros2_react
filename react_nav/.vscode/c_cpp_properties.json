@@ -1,0 +1,18 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/foxy/include/**",
+        "/home/joaocastilho/ros2_react/src/react_nav/include/**",
+        "/home/joaocastilho/ros2_react/src/stage_ros2/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
