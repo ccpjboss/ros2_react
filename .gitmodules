@@ -1,3 +1,6 @@
 [submodule "stage_ros2"]
 	path = stage_ros2
 	url = https://github.com/ymd-stella/stage_ros2
+[submodule "slam_gmapping"]
+	path = slam_gmapping
+	url = https://github.com/Project-MANAS/slam_gmapping
