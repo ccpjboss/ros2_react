@@ -19,9 +19,9 @@ def generate_launch_description():
         'params',
         default='/home/ccpjboss/ros2_test/src/ros2_react/react_nav/params/nav2_params.yaml')
 
-    #nav2_launch_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
+    nav2_launch_dir = os.path.join(get_package_share_directory('nav2_bringup'), 'launch')
     #nav2_launch_dir = "/home/ccpjboss/ros2_test/src/navigation2/nav2_bringup/launch"
-    nav2_launch_dir = "/home/ccpjboss/ros2_test/src/navigation2/nav2_bringup/bringup/launch"
+    #nav2_launch_dir = "/home/ccpjboss/ros2_test/src/navigation2/nav2_bringup/bringup/launch"
 
     rviz_config_dir = "/home/ccpjboss/ros2_test/src/ros2_react/react_nav/rviz/rviz_default.rviz"
 
