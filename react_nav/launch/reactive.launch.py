@@ -14,7 +14,7 @@ def generate_launch_description():
             executable='stage_ros2',
             name='stage',
             parameters=[
-                {"world":"./src/react_nav/worlds/rooms.world"}
+                {"world":"/home/ccpjboss/ros2_test/src/ros2_react/react_nav/worlds/rooms.world"}
             ],
             remappings=[
                 ("/stage/ranger_0","/scan")

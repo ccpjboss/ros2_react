@@ -18,13 +18,20 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
 find_package(stage_ros2 REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(stage_ros REQUIRED)
+find_package(stage REQUIRED)
+find_package(nav2_msgs REQUIRED)
 
 add_executable(reactive src/reactive_navigation.cpp)
-ament_target_dependencies(reactive rclcpp sensor_msgs geometry_msgs stage_ros stage_ros2)
+ament_target_dependencies(reactive rclcpp sensor_msgs geometry_msgs stage stage_ros2)
+
+add_executable(room_route src/room_navigation.cpp)
+ament_target_dependencies(room_route rclcpp rclcpp_action nav2_msgs geometry_msgs std_msgs)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
@@ -37,6 +44,7 @@ if(BUILD_TESTING)
 endif()
 install(TARGETS
   reactive
+  room_route
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
