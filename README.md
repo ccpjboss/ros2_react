@@ -12,7 +12,7 @@ odom_frame_ = "robot/odom";
 ---
 To run the package:
 ```
-ros2 launch react_nav reactive.launch.py
+ros2 launch react_nav stage_nav2_simulation.launch.py
 ```
 There is also a teleop launch file:
 ```
